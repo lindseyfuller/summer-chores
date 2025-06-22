@@ -1,7 +1,7 @@
 # summer-chores
 Project Title: Summer Chores To Do List
 
-Description: Assignment to illustrate how to do callbacks and promises.
+Description: Assignment to illustrate how to do callbacks, promises, and async and await functions. Times could be changed to complete all chores.
 
 Installation Instructions/Usage: Clone the repo and use node js to run program
 
@@ -22,6 +22,16 @@ function mowYard(name) {
     }, 2000);
     }) 
 }
+
+Async and Await:
+async function doSummerChores(name)
+{
+    try {
+        const mowYardResult = await mowYard(name);
+        console.log(mowYardResult);
+
+        const weedEatResult = await weedEat(name);
+        console.log(weedEatResult);
 
 Contributing:N/A
 
